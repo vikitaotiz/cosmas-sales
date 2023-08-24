@@ -45,6 +45,18 @@
       sizes="180x180"
       href="/icons/apple-icon-180x180.png"
     />
+    <script
+      src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
+      defer
+    ></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(function (OneSignal) {
+        OneSignal.init({
+          appId: "83f3ff27-92bc-4503-96f2-83d9c340cfb7",
+        });
+      });
+    </script>
   </head>
   <body>
     <div id="q-app"></div>
